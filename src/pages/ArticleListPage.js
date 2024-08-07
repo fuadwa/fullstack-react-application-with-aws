@@ -1,6 +1,15 @@
+import articles from './article-content';
+import { Link } from 'react-router-dom';
+import ArticleList from '../components/ArticlesList';
 const ArticleListPage=()=>{
     return (
-        <h1>This is The articlelist Page</h1>
+        
+        <>
+        <h1>
+            Articles
+        </h1>
+        <ArticleList articles={articles}/>
+        </>
     );
 }
 export default ArticleListPage;
